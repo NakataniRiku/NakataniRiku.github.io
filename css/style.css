@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1920px; /* 最大幅の設定 */
+    margin: 0 auto; /* 中央寄せ */
+}
+
+.hero {
+    height: 100h;
+    width: 100%;
+    background-color: white;
+    text-align: left;
+
+    /* display: flex;
+    justify-content: center; 水平方向の中央配置
+    align-items: center; 垂直方向の中央配置 */
+    /* font-weight: 400; 
+    ここで全体画面設定？*/
+
+}
+
+.hero img {
+    /* margin: 0 auto;水平方向の中央配置 */
+    max-width: 100%; /* 画像の幅を親要素の幅に合わせる */
+ /* 画像の高さを自動調整 */
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: blue;
+    margin-left: 0;
+    display: inline-block;
+    text-align: right;
+}
+
+nav {
+    display: flex;
+    text-align: left;;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.logo img {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.hero .ue {
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hero .ue li {
+
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 15px;
+}
+
+.hero .ue a {
+    color: #344398;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    /* transition: all 0.3s; */
+}
+
+
+
+.left-image1 img {
+
+    display: block;
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+
+.greeting {
+    width: 100%;
+    padding: 100px 0;
+    background-color: white;
+    position: relative;
+    height: 800px;
+}
+
+
+
+
+.bordertate {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left:5px solid blue; /*線の設定*/
+    padding-left: 2px;
+    padding:2px 8px; /*余白の設定*/
+}
+
+.bordertate .main1 {
+    width: 1130px; /*このサイズは？ */
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.bordertate .main1 p {
+    color: #344398;
+    font-size: 18px;
+    /* margin-bottom: 20px;  余白 */
+    text-align: center;
+    /* height: 100vh; 必要に応じて高さを指定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting .mizu1 {
+    font-weight:100;
+    font-size: 50px;
+    color: #2799d6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.greeting-text {
+    text-align: center; /* テキストを中央揃えにする */
+}
+
+.greeting .greeting-text h3 {
+    color: blue;
+    font-size: 24px;
+    margin-bottom: 20px; /*余白*/
+
+    display: inline-block;
+    text-align: center;
+
+    justify-content: center; /* 横方向の中央寄せ */
+    align-items: center; /* 縦方向の中央寄せ */
+}
+
+/* .greeting .left-image2 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.greeting .left-image2 img {
+    margin-right: 10px;
+}  詳細はhtmlに */
+
+.greeting .p1 p {
+    color: #344398;
+    text-align: center;
+    letter-spacing: 1px; /*文字間隔*/
+    line-height: 28px; /*行の高さ*/
+    margin-bottom: 25px; /*余白*/
+    font-size: 18px;
+}
+
+
+/* button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.button {
+    width: 280px; /*横*/
+    height: 70px; /*縦*/
+    color: #ffffff;
+    background-color: #344398;
+    font-size: 18pt;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin: 0px;/*上下間隔*/
+
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* text-align: center;ボタンの中身が中央になるだけだから効かない*/
+
+
+}
+
+
+/* .contact {
+    width: 70px;
+    height: 280px;
+    font-size: 18pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.contact .contact-button {
+    background-color: #344398;
+    padding: 13px 30px;
+    color: white;
+    text-decoration: none;
+} */
+
+
+/* .content {
+    padding-top: 230px;
+}
+
+.content .hero {
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 50px;
+    padding-left: 270px;
+}
+
+.content .hero img {
+    width: 1080px;
+    height: 720px;
+    margin-top: -150px;
+} */
+
+
+
+
+.business {
+    width: 100%;
+    padding: 100px 0;
+    background-color: white;
+    position: relative;
+    height: 600px;
+    text-align: left;/*sectionの塊ごと左に寄せる*/
+}
+
+.borderyoko {
+    width: 50px;
+    border-bottom: 2px solid blue; /* ボーダーの太さと色を設定 */
+    padding-bottom: 2px;
+}
+
+.borderyoko .main2 {
+    width: 1130px; /*このサイズは？ */
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.borderyoko .main2 p {
+    color: #344398;
+    font-size: 18px;
+    /* margin-bottom: 20px;余白 */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.business .mizu2 {
+    font-weight : 100;
+    font-size: 50px;
+    color: #2799d6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.business .p2 p {
+    color: #344398;
+    text-align: center;
+    letter-spacing: 1px; /*文字間隔*/
+    line-height: 28px; /*行の高さ*/
+    margin-bottom: 45px; /*余白*/
+    font-size: 18px;
+}
+
+
+
+
+.service {
+    width: 100%;
+    padding: 100px 0;
+    background-color: white;
+    position: relative;
+    height: 600px;
+}
+
+.borderyoko .main3 {
+    width: 1130px; /*このサイズは？ */
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.borderyoko .main3 p {
+    color: #344398;
+    font-size: 18px;
+    /* margin-bottom: 20px;余白 */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service .mizu3 {
+    font-weight : 100;
+    font-size: 50px;
+    color: #2799d6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service .p3 p {
+    color: #344398;
+    text-align: center;
+    letter-spacing: 1px; /*文字間隔*/
+    line-height: 28px; /*行の高さ*/
+    margin-bottom: 45px; /*余白*/
+    font-size: 18px;
+}
+
+
+
+
+
+.recruit {
+    width: 100%;
+    padding: 100px 0;
+    background-color: white;
+    position: relative;
+    height: 600px;/*縦幅指定*/
+}
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    color: #fff;
+}
+
+#particles-js{ 
+    position:fixed;/*描画固定*/
+    z-index:-1;/*描画を一番下に*/
+    width: 100%;
+    height: 100%;
+    background-color:#35004D;/*背景色*/
+}
+  
+#wrapper{
+    position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+    z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+    width:100%;
+    height: 100%;
+}
+
+.bordertate .main4 {
+    width: 1130px; /*このサイズは？ */
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bordertate .main4 p {
+    color: #344398;
+    font-size: 18px;
+    /* margin-bottom: 20px;余白 */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recruit .mizu4 {
+    font-weight : 100;
+    font-size: 50px;
+    color: #2799d6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.recruit .p4 p {
+    color: #344398;
+    text-align: center;
+    letter-spacing: 1px; /*文字間隔*/
+    line-height: 28px; /*行の高さ*/
+    margin-bottom: 20px; /*余白*/
+    font-size: 18px;
+}
+
+.buttonview {
+    width: 280px; /*横*/
+    height: 70px; /*縦*/
+    color: #ffffff;
+    background-color: #344398;
+    font-size: 18pt;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin: 0px;/*上下間隔*/
+}
+
+
+
+
+
+
+.borderyoko2 {
+    border-bottom: 2px solid blue; /* ボーダーの太さと色を設定 */
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+}
+
+.logologo {
+    text-align:center;
+    height: 80px;
+}
+
+.logologo img {
+    line-height: 1; /*上の余白を消す　⇒　消えてない*/
+    display: block; /* img要素をブロック要素として扱い、横幅を100%にする */
+    margin: 0 auto; /* 左右のマージンを自動で設定して中央に配置 */
+}
+
+.p5 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 13px;
+}
